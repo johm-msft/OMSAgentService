@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace OMSAgentService
 {
-    public partial class Service1 : ServiceBase
+    public partial class DataCollector : ServiceBase
     {
-        public Service1()
+        public DataCollector()
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace OMSAgentService
 
         protected override void OnStop()
         {
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

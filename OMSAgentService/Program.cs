@@ -17,7 +17,7 @@ namespace OMSAgentService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new DataCollector()
             };
             ServiceBase.Run(ServicesToRun);
         }
